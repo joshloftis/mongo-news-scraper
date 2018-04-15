@@ -1,0 +1,294 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #21222C;
+  color: white;
+}
+
+nav {
+  background: #1D1E27;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+.blur-body {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.site-content {
+  flex: 1;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.footer {
+  background-color: #1D1E27!important;
+  z-index: 100;
+}
+
+.text-muted {
+  font-size: 12px;
+}
+
+li a {
+  list-style: none;
+}
+
+.articles {
+  margin-top: 70px;
+}
+
+.article-div {
+  padding: 20px;
+  border: 1px solid #404255;
+  margin: 15px 0;
+  border-radius: 2px;
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.article-div:hover {
+  -webkit-box-shadow: 0px 0px 25px -1px rgba(80, 250, 123, 1);
+  -moz-box-shadow: 0px 0px 25px -1px rgba(80, 250, 123, 1);
+  box-shadow: 0px 0px 25px -1px rgba(80, 250, 123, 1);
+}
+
+.article-div:hover h2 {
+  color: rgba(80, 250, 123, 1);
+}
+
+.article-div:hover p {
+  color: #8BE9FD;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #FF386B;
+  text-decoration: none;
+}
+
+.mybtn {
+  font-size: 13px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin: 3px 0;
+  background: none;
+  cursor: pointer;
+}
+
+.mybtn:hover {
+  background: #FF386B;
+  color: white;
+}
+
+.side-comment-pane {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+.expand-comment-pane {
+  width: 100vw;
+}
+
+.filled-div {
+  background: rgba(64, 66, 85, 0.8);
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.closebtn {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+textarea {
+  padding: 8px;
+  width: 75%;
+  font-size: 13px;
+  min-height: 75px;
+  border-radius: 3px;
+}
+
+textarea[placeholder] {
+  font-size: 13px;
+}
+
+.article-comment-div {
+  color: white;
+  width: 75%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  margin-bottom: 30px;
+}
+
+.comment-header {
+  color: white;
+}
+
+hr {
+  border-color: white;
+  width: 75%;
+  margin-left: 0;
+}
+
+.article-comment-div>button, .article-comment-div>button>a, #submitButton{
+  color: white;
+}
+
+#submitButton {
+  margin-bottom: 40px;
+}
+
+.closebtn {
+  color: white;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-right: .5em;
+  padding-left: .5em;
+}
+
+.red {
+  color: red;
+}
+
+#message, #message2 {
+  display: none;
+  min-width: 270px;
+  z-index: 99999;
+  position: fixed;
+  margin: 0 auto;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 4px;
+}
+
+.success {
+  background: rgba(80, 250, 123, 0.9);
+  border: 3px solid #26AF49;
+}
+
+.success>h2 {
+  padding: 10px 30px;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.noAction {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid red;
+}
+
+.noAction>h2 {
+  padding: 10px 30px;
+  color: red;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 576px) {
+    textarea {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .article-comment-div {
+      width: 90%;
+      margin-left: 5%;
+    }
+    hr {
+      width: 90%;
+      margin-left: 5%
+    }
+    #submitButton {
+      margin-left: 5%;
+    }
+    .closebtn {
+      margin-top: -10px;
+    }
+    .red {
+      margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-brand {
+      font-size: .8em;
+    }
+    a.nav-link {
+      font-size: .6em;
+    }
+    textarea {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .article-comment-div {
+      width: 90%;
+      margin-left: 5%;
+    }
+    hr {
+      width: 90%;
+      margin-left: 5%
+    }
+    #submitButton {
+      margin-left: 5%;
+    }
+    .closebtn {
+      margin-top: -10px;
+    }
+    .red {
+      margin-left: 5%;
+    }
+    .article-div {
+      min-height: 80vh;
+    }
+}
