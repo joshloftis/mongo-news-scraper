@@ -26,14 +26,14 @@ $(document).ready(() => {
     });
   };
 
-  const scrape = () => {
-    $.ajax({
-      url: '/scrape',
-      method: 'GET',
-    }).then(() => {
-      populateArticle();
-    });
-  };
+  // const scrape = () => {
+  //   $.ajax({
+  //     url: '/scrape',
+  //     method: 'GET',
+  //   }).then(() => {
+  //     populateArticle();
+  //   });
+  // };
 
   const saveArticle = function saveAnArticle() {
     const id = $(this).data('id');
@@ -152,5 +152,6 @@ $(document).ready(() => {
     closePane();
   });
   $(document).on('click', '.comment', viewComment).on('click', '.comment', updatePage);
-  scrape();
+  // scrape();
+  populateArticle();
 });

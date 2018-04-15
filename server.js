@@ -40,7 +40,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Setting the app up to use the routes
-app.use(scrapeRoutes);
+// app.use(scrapeRoutes);
 app.use(htmlRoutes);
 app.use('/api', apiRoutes);
 
